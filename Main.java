@@ -1,11 +1,13 @@
+import java.util.Scanner;
 class Main {
   public static void main(String[] args) {
-    String s = "Hello world!";
-
+    
+    Scanner toRead = new Scanner(System.in);
+    String word = toRead.nextLine();
     int count = 0;
 
-    for (int i = 0; i < s.length(); i++) {
-        if (s.charAt(i) == ' ') {
+    for (int i = 0; i < word.length(); i++) {
+        if (word.charAt(i) == ' ') {
             System.out.println("count is " + count);
             count = 0;
         } else {
